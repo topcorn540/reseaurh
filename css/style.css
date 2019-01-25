@@ -28,6 +28,9 @@ h1{
 #Contenu h1{
     padding: 150px 0px 30px 0px;
 }
+#Apropos h1{
+    padding: 200px 0px 30px 0px;
+}
 h2 {
     padding: 50px 0 30px 0!important;
 }
@@ -223,7 +226,6 @@ div#content{
 .video{
     padding: 0 0 50px 0;
 }
-/**************** FIN PAGE ACCUEIL ****************/
 table tr th{
     color: #89dc65;
 }
@@ -250,6 +252,7 @@ table caption{
 
 /**************** PAGE ACTIVITÉ ****************/
 .titre_activite{
+    padding: 200px 0px 0px 0px!important;
     color: #89dc65;
 }
 .activite{
@@ -316,7 +319,7 @@ div#content_footer{
     opacity: 0.5;
 }
 #infolettre{
-    margin: 0 11px 11px 11px;
+    margin: 0 11px 11px 11px!important;
     -moz-border-radius: 25px 25px;
     -webkit-border-radius: 25px 25px;
     border-radius: 25px 25px;
