@@ -30,17 +30,17 @@
 			$('#mainNav').css('background-color','none')
 		}
 	});
-	
-	
-	
-	
-	
-	  // ajoute une classe à #mainNav quand l'utilisateur scroll
+
+
+    
+
+    // ajoute une classe à #mainNav quand l'utilisateur scroll
     var navbarCollapse = function() {
       if ($("#mainNav").offset().top > 12) {
         $("#mainNav").addClass("navbar-shrink");
       } else {
         $("#mainNav").removeClass("navbar-shrink");
+
       }
     };
 	
