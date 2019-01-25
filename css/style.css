@@ -195,20 +195,17 @@ div#content{
     background-color: #89dc65 !important;
 
 }
-
-/**************** PAGE ACCUEIL ****************/
-#Accueil h1{
-    padding: 100px 0 0 0;
-}
 #menuSecondaire .nav-item{
     text-align: center;
     color: #fff;
 }
 /**************** FIN MENU SECONDAIRE ****************/
 
+
 /**************** PAGE ACCUEIL ****************/
-
-
+#Accueil h1{
+    padding: 70px 0 50px 0;
+}
 #Accueil .evenement{
     width: 500px;
     height: 300px;
@@ -223,7 +220,9 @@ div#content{
     height:500px;
     width:1px;     
 }
-
+.video{
+    padding: 0 0 50px 0;
+}
 /**************** FIN PAGE ACCUEIL ****************/
 table tr th{
     color: #89dc65;
@@ -540,9 +539,6 @@ span.rouge{
     .form_membre input{
         text-align: center;
     } 
-    .champs_obligatoire label
-    {
-    }
     iframe{
         width: 600px;
     }
