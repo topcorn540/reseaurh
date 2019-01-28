@@ -206,7 +206,6 @@ div#content{
     top: 90px;
     width: 100%;
     background-color: #89dc65 !important;
-
 }
 #menuSecondaire .nav-item{
     text-align: center;
@@ -231,7 +230,7 @@ div#content{
     border-left:1px solid #89dc65;
     height:500px;
     width:1px;
-    margin: 20px 0 80px 0;     
+    margin: 30px 0 80px 0;     
 }
 .video{
     padding: 0 0 30px 0;
@@ -266,7 +265,7 @@ table caption{
     color: #89dc65;
 }
 .activite{
-    padding: 40px 0 40px 0;
+    padding: 40px 15px 40px 15px;
 }
 /**************** FIN PAGE ACTIVITÉ ****************/
 
@@ -635,6 +634,7 @@ span.rouge{
         /*FORMULAIRE MEMBRE*/
         .form_membre {
             text-align: center;
+            margin: 0 15px 0 15px;
         }
         .form_membre input{
             text-align: center;
@@ -659,6 +659,11 @@ span.rouge{
         .table-responsive-sm{
             margin: 0 0 80px 0;
         }
+
+        #menuSecondaire{
+            top: 80px;
+        }
+
     }
 
     @media(max-width:576px){
@@ -697,6 +702,7 @@ span.rouge{
         }
         /*FIN MODAL*/
 
+        /*HEADER*/
         h1.text-drop{
             padding: 30px 0 0 0!important;
         }
@@ -707,6 +713,7 @@ span.rouge{
         .masthead{
             padding: 100px 0 0 0;
         }
+        /*FIN HEADER*/
 
         /*PAGE ACTIVITE*/
         .activite{
