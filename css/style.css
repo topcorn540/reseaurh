@@ -614,6 +614,15 @@ span.rouge{
 
     /*Tablette téléphone*/
     @media(max-width:768px){
+                #mainNav{
+            background: transparent;
+        }  
+        .navbar-brand{
+            display: none;
+        }
+        .navbar-toggler{
+            margin: 15px 0px 15px 85%;
+        }
         /*FORMULAIRE MEMBRE*/
         .form_membre {
             text-align: center;
@@ -641,6 +650,7 @@ span.rouge{
     }
 
     @media(max-width:576px){
+
         /*GLOBAL*/
         h1{
             font-size: 1.5em;
@@ -700,8 +710,11 @@ span.rouge{
            height: 50px;
        }
        .slick-track{
-        height: 50px!important;
+        height: 50px !important;
     }
+
     /*FIN CAROUSEL PARTENAIRE*/
-}    
+
+}  
+
 
