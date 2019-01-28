@@ -319,6 +319,8 @@ div#content_footer{
 .img_link{
     padding: 0 11px 30px 11px;
 }
+    cursor: pointer;
+}
 .second_nav .nav-link{
     font-size: 18px;
     font-family: 'Nunito', sans-serif;
@@ -622,7 +624,7 @@ span.rouge{
 
     /*Tablette téléphone*/
     @media(max-width:768px){
-                #mainNav{
+        #mainNav{
             background: transparent;
         }  
         .navbar-brand{
