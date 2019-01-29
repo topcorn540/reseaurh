@@ -32,6 +32,27 @@
 	});
 
 
+  $(window).scroll(function(){
+        if ($("#mainNav").offset().top > 12) {
+            if ($(window).width()>968){
+                console.log("petit logo ordi");
+                $(".navbar-brand").css({"content": "url(img/logo_nav_mdv2.png)", "width":"150px"});
+            }
+            else if ($(window).width()<968) {
+                console.log("petit logo ipad");
+                $(".navbar-brand").css({"content": "url(img/logo_nav_mdv2.png)", "width":"150px"});
+            }
+        } 
+        if ($("#mainNav").offset().top < 12) {
+            if ($(window).width()>968) {
+                console.log("grand logo ordi")
+                $(".navbar-brand").css({"content": "url(img/logo_nav.png)", "width": "200px"});
+            }
+        }
+
+});
+
+
     
 
     // ajoute une classe à #mainNav quand l'utilisateur scroll
