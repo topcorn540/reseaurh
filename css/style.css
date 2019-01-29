@@ -622,7 +622,6 @@ span.rouge{
     .btn-modal{
         font-size: 1em;
     }
-
 }    
 
     /*Tablette téléphone*/
@@ -736,10 +735,14 @@ span.rouge{
        }
        .slick-track{
         height: 50px !important;
-    }
+        }
 
     /*FIN CAROUSEL PARTENAIRE*/
 
+    .section_logo{
+            margin: 20px 0 0 0!important;
+            padding: 10px 0 10px 0;
+        }
 }  
 
 
