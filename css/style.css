@@ -273,6 +273,7 @@ table caption{
 
 /**************** FORMULAIRE ****************/
 input.form-control{
+    width: 600px;
     -moz-border-radius: 25px 25px;
     -webkit-border-radius: 25px 25px;
     border-radius: 25px 25px;
@@ -484,8 +485,10 @@ h2#exampleModalLabel.modal-title {
 .slick-current {
     opacity: 1;
 }
+.logo_partenaire{
+    width: 90px!important;
+}
 /**************** FIN CAROUSEL SLICK ****************/
-
 
 
 /**************** SPAN COULEUR ****************/
@@ -500,6 +503,29 @@ span.rouge{
 }
 /**************** FIN SPAN COULEUR ****************/
 
+/*404 et credit*/
+.erreur{
+    width: 250px;
+}
+.p_erreur{
+    text-align: center;
+    padding: 30px 0 0 0;    
+}
+a.lien_accueil{
+    color: #89dc65;
+    text-decoration: none;
+}
+a.lien_accueil:hover{
+    color: #89dc65;
+    text-decoration: underline;
+}
+.section_logo{
+    margin: 100px 0 0 0;
+}
+.conception{
+    border-right: 1px solid #89dc65;
+}
+/*FIN 404 credit*/
 
 /*Section pour les effets qui sont seulement activé dans une certaine grandeur*/
 
@@ -529,7 +555,6 @@ span.rouge{
     }
     .nav-link:hover::after{
         width:100%;
-
     }
 }
 
@@ -568,7 +593,12 @@ span.rouge{
     #Accueil h1{
         padding-top: 50px;
     }
-
+    input.form-control{
+    width: 400px;
+    -moz-border-radius: 25px 25px;
+    -webkit-border-radius: 25px 25px;
+    border-radius: 25px 25px;
+    }
 /*FIN FORMULAIRE MEMBRE*/
 
 /*ACTIVITÉ*/
@@ -738,6 +768,13 @@ span.rouge{
         }
 
     /*FIN CAROUSEL PARTENAIRE*/
+
+    input.form-control{
+    width: 300px;
+    -moz-border-radius: 25px 25px;
+    -webkit-border-radius: 25px 25px;
+    border-radius: 25px 25px;
+    }
 
     .section_logo{
             margin: 20px 0 0 0!important;
