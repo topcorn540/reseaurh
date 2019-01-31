@@ -133,7 +133,7 @@ div#content{
     background-color: transparent;   
 }
 #mainNav{
-    padding:0px 16px 0px 0px;
+    padding:0px 15px 0px 0px;
     transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
     letter-spacing: 1px;
     border-bottom: none;
@@ -169,10 +169,15 @@ div#content{
 .dropdown-item::after{
     background:none !important;
 }
-.dropdown-menu{
+nav .dropdown-menu{
     background-color: #89dc65;
     border:none;
     margin:0px 10px 10px 20px;
+    }
+.footer_section .dropdown-menu, .footer_section_responsive .dropdown-menu{
+    background-color: #89dc65;
+    border:none;
+    width: 100%;
 }
 .dropdown-toggle::after{
     margin: 0;
