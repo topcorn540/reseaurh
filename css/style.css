@@ -64,6 +64,9 @@ div#content{
 .container-fluid{
     padding: 0px;
 }
+.fleche{
+    display: none;
+}
 /**************** FIN GÉNÉRAUX ****************/
 
 
@@ -119,12 +122,13 @@ div#content{
 #mainNav .nav-link{
     color:#fff;
 }
-#mainNav .navbar-nav .nav-item a{
+#mainNav .navbar-nav .nav-item a, #mainNav .navbar-nav .nav-item .dropdown a{
     transition: color 0.3s ease-in-out, background 0.3s ease-in-out, transform 0.3s ease-in-out;
     color:#fff;
 
 }
-#mainNav .navbar-nav .nav-item a:hover{
+
+#mainNav .navbar-nav .nav-item a:hover, #mainNav .navbar-nav .nav-item .dropdown a:hover{
     outline: none;
     background-color: transparent;   
 }
@@ -156,6 +160,23 @@ div#content{
 }
 #mainNav .navbar-brand{
     padding: 0;
+}
+.dropdown-item{
+    color: white !important;
+    text-align: center;
+    background:none !important;
+}
+.dropdown-item::after{
+    background:none !important;
+}
+.dropdown-menu{
+    background-color: #89dc65;
+    border:none;
+    margin:0px 10px 10px 20px;
+}
+.dropdown-toggle::after{
+    margin: 0;
+    border:none;
 }
 /**************** FIN MAIN NAVIGATION ****************/
 
@@ -250,10 +271,12 @@ table caption{
     text-align: center;
     font-size: 1.2em;
 }
-.act_prevu{
+.act_prevu span{
     color: #fff;
     font-weight: bold;
     background-color:#89dc65;
+    border-radius:50%;
+    padding: 5px;
 }
 /**************** FIN PAGE ACCUEIL ****************/
 
@@ -779,19 +802,28 @@ a.lien_accueil:hover{
         /*CAROUSEL PARTENAIRE*/
 
 
-    /*FIN CAROUSEL PARTENAIRE*/
+        /*FIN CAROUSEL PARTENAIRE*/
 
-    input.form-control.formulaire{
-    width: 300px;
-    -moz-border-radius: 25px 25px;
-    -webkit-border-radius: 25px 25px;
-    border-radius: 25px 25px;
-    }
+        input.form-control.formulaire{
+            width: 300px;
+            -moz-border-radius: 25px 25px;
+            -webkit-border-radius: 25px 25px;
+            border-radius: 25px 25px;
+        }
 
-    .section_logo{
+        .section_logo{
             margin: 20px 0 0 0!important;
             padding: 10px 0 10px 0;
         }
+
+        #menuSecondaire ul{
+            color: black;
+            flex-direction: column;
+        }
+        #menuSecondaire .fleche{
+            display: block
+        }
+
 }  
 
 
