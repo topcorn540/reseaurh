@@ -64,6 +64,9 @@ div#content{
 .container-fluid{
     padding: 0px;
 }
+.fleche{
+    display: none;
+}
 /**************** FIN GÉNÉRAUX ****************/
 
 
@@ -788,19 +791,28 @@ a.lien_accueil:hover{
         /*CAROUSEL PARTENAIRE*/
 
 
-    /*FIN CAROUSEL PARTENAIRE*/
+        /*FIN CAROUSEL PARTENAIRE*/
 
-    input.form-control.formulaire{
-    width: 300px;
-    -moz-border-radius: 25px 25px;
-    -webkit-border-radius: 25px 25px;
-    border-radius: 25px 25px;
-    }
+        input.form-control.formulaire{
+            width: 300px;
+            -moz-border-radius: 25px 25px;
+            -webkit-border-radius: 25px 25px;
+            border-radius: 25px 25px;
+        }
 
-    .section_logo{
+        .section_logo{
             margin: 20px 0 0 0!important;
             padding: 10px 0 10px 0;
         }
+
+        #menuSecondaire ul{
+            color: black;
+            flex-direction: column;
+        }
+        #menuSecondaire .fleche{
+            display: block
+        }
+
 }  
 
 
