@@ -292,7 +292,7 @@ table caption{
 
 
 /**************** FORMULAIRE ****************/
-input.form-control{
+input.form-control.formulaire{
     width: 600px;
     -moz-border-radius: 25px 25px;
     -webkit-border-radius: 25px 25px;
@@ -444,6 +444,11 @@ h3.media_sociaux {
 
 
 /**************** MODAL ****************/
+input.form-control{
+    -moz-border-radius: 25px 25px;
+    -webkit-border-radius: 25px 25px;
+    border-radius: 25px 25px;
+}
 .modal-content{
     -moz-border-radius: 25px 25px;
     -webkit-border-radius: 25px 25px;
@@ -506,7 +511,7 @@ h2#exampleModalLabel.modal-title {
     opacity: 1;
 }
 .logo_partenaire{
-    width: 90px!important;
+    width: 110px!important;
 }
 /**************** FIN CAROUSEL SLICK ****************/
 
@@ -523,7 +528,14 @@ span.rouge{
 }
 /**************** FIN SPAN COULEUR ****************/
 
-/*404 et credit*/
+/**************** 404 et credit ****************/
+#Contenu_credit{
+    overflow-x: hidden;
+    background-color: #fff;
+}
+#Contenu_credit h1{
+    padding: 150px 0px 30px 0px;
+}
 .erreur{
     width: 250px;
 }
@@ -542,10 +554,7 @@ a.lien_accueil:hover{
 .section_logo{
     margin: 100px 0 0 0;
 }
-.conception{
-    border-right: 1px solid #89dc65;
-}
-/*FIN 404 credit*/
+/**************** FIN 404 credit ****************/
 
 /*Section pour les effets qui sont seulement activé dans une certaine grandeur*/
 
@@ -613,7 +622,7 @@ a.lien_accueil:hover{
     #Accueil h1{
         padding-top: 50px;
     }
-    input.form-control{
+    input.form-control.formulaire{
     width: 400px;
     -moz-border-radius: 25px 25px;
     -webkit-border-radius: 25px 25px;
@@ -657,16 +666,6 @@ a.lien_accueil:hover{
 
     .activite{
         padding: 20px 0 20px 0;
-    }
-
-    .fond_slider{
-        height: 50px;
-    }
-    .carousel_partenaire{
-         height: 50px;
-    }
-    .slick-track{
-        height: 50px!important;
     }
 
     .btn-modal{
@@ -716,6 +715,16 @@ a.lien_accueil:hover{
 
         #menuSecondaire{
             top: 80px;
+        }
+
+        .fond_slider{
+            height: 50px!important;
+        }
+        .carousel_partenaire{
+           height: 50px;
+       }
+       .slick-track{
+        height: 50px !important;
         }
 
     }
@@ -777,19 +786,11 @@ a.lien_accueil:hover{
         /*FIN PAGE ACTIVITE*/
 
         /*CAROUSEL PARTENAIRE*/
-        .fond_slider{
-            height: 50px;
-        }
-        .carousel_partenaire{
-           height: 50px;
-       }
-       .slick-track{
-        height: 50px !important;
-        }
+
 
     /*FIN CAROUSEL PARTENAIRE*/
 
-    input.form-control{
+    input.form-control.formulaire{
     width: 300px;
     -moz-border-radius: 25px 25px;
     -webkit-border-radius: 25px 25px;
