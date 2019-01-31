@@ -498,7 +498,7 @@ h2#exampleModalLabel.modal-title {
 .slick-prev:before, .slick-next:before {
     color: #89dc65!important;
 }
-#Accueil .slider {
+#Accueil .slider_video {
     width: 50%;
     margin: 5px auto;
 }
@@ -520,6 +520,7 @@ h2#exampleModalLabel.modal-title {
 }
 .logo_partenaire{
     width: 110px!important;
+    margin: 10px;
 }
 /**************** FIN CAROUSEL SLICK ****************/
 
@@ -569,7 +570,7 @@ a.lien_accueil:hover{
 /*Desktop*/
 @media(min-width:992px){
 
-    .nav-link.active{
+   .nav-link.active{
         outline: none;
         background-color: rgba(255,255,255,0.3);
     }
@@ -593,6 +594,10 @@ a.lien_accueil:hover{
     .nav-link:hover::after{
         width:100%;
     }
+        .logo_partenaire{
+        width: 90px;
+        margin: 10px;
+    }
 }
 
 
@@ -604,7 +609,7 @@ a.lien_accueil:hover{
     #mainNav{
         background-color: rgb(47,51,56);
     }
-
+/******************WTF**********************/
 
 
 
@@ -620,7 +625,7 @@ a.lien_accueil:hover{
     iframe{
         width: 600px;
     }
-    .iframe-lg, .slider{
+    .iframe-lg, .slider_video{
         display: none !important;
     }
     .iframe-md{
@@ -648,6 +653,10 @@ a.lien_accueil:hover{
         height: 202.5px;
     }
 
+
+    .logo_partenaire{
+        width: 90px!important;
+    }
 
     .evenement p{
         text-align: center !important;
@@ -700,9 +709,6 @@ a.lien_accueil:hover{
         .form_membre input{
             text-align: center;
         } 
-        .champs_obligatoire label
-        {
-        }
         iframe{
             width: 600px;
         }
@@ -723,16 +729,6 @@ a.lien_accueil:hover{
 
         #menuSecondaire{
             top: 80px;
-        }
-
-        .fond_slider{
-            height: 50px!important;
-        }
-        .carousel_partenaire{
-           height: 50px;
-       }
-       .slick-track{
-        height: 50px !important;
         }
 
     }
@@ -757,6 +753,12 @@ a.lien_accueil:hover{
             padding: 0 15px 0 15px;
         }
         /*FIN GLOBAL*/
+
+
+        .logo_partenaire{
+            width: 70px!important;
+        }
+
 
         /*TABLEAU CALENDRIER*/
         .table th{
