@@ -135,7 +135,7 @@
 	<h1 class="text-center">Le <span class="vert">Réseau RH +</span>, c'est quoi ?</h1>
 	<div class="row justify-content-center">
 		<div class="col video">
-			<div style="" class="carousel slider">
+			<div style="" class="carousel slider_video">
 				<div class="embed-responsive embed-responsive-16by9">
 			    	<iframe class="embed-responsive-item iframe-lg" src="https://www.youtube.com/embed/tnmv9zT26to" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
@@ -232,12 +232,14 @@
 </div>
 	
 
-	<!-- FOOTER -->
+
+<!-- FOOTER -->
 	<div id="content_footer" class="container-fluid d-flex flex-column justify-content-end">	
 		<footer class="container-fluid">
 
-		<div class="fond_slider ">
-				<div class="col-9 d-none d-lg-block mx-auto carousel_partenaire slider">
+		<div class="container-fluid fond_slider">
+		<div class="container d-none d-md-block">
+				<div class="col-12 mx-auto carousel_partenaire slider">
 					<div class="partenaire">
 						<img src="img/logoBetN.png" class="logo_partenaire mx-auto" alt="Responsive image">
 					</div>
@@ -271,8 +273,8 @@
 				</div>
 			</div>
 
-			<div class="fond_slider ">
-				<div class="col-9 d-md-block d-lg-none mx-auto carousel_partenaire_responsive slider">
+			<div class="container d-sm-block d-md-none">
+				<div class="col-10 mx-auto carousel_partenaire_responsive slider">
 					<div class="partenaire">
 						<img src="img/logoBetN.png" class="logo_partenaire mx-auto" alt="Responsive image">
 					</div>
@@ -304,6 +306,7 @@
 						<img src="img/logoBetN.png" class="logo_partenaire mx-auto" alt="Responsive image">
 					</div>
 				</div>
+			</div>
 			</div>
 
 			<div class="container">
@@ -430,8 +433,8 @@
 		$(".carousel_partenaire_responsive").slick({
         lazyLoad: 'ondemand', // ondemand progressive anticipated
         infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 3
+        slidesToShow: 2,
+        slidesToScroll: 2
     });	
 });
 </script>
