@@ -1,35 +1,31 @@
+
 /******** GÉNÉRAUX ********/
 #Accueil{
     overflow-x: hidden;
     background-color: #fff;
 }
 html, body {
-    margin: 0;
-    padding: 0;
+
+      margin: 0;
+      padding: 0;
 }
 #Contenu{
     overflow-x: hidden;
     background-color: #fff;
     padding: 0 0 80px 0;
 }
-#Contenu h1{
-    padding: 150px 0px 30px 0px;
-}
-div#content{
-    min-height: 70vh;
-    width: 100%;
-}
 #Apropos{
     background-color: #fff;
     padding: 0 15px 80px 15px;
 }
-#Apropos h1{
-    padding: 200px 0px 30px 0px;
-}
 *{
-  	margin: 0;
-  	padding: 0;
-  	font-family: 'Nunito', sans-serif;
+
+  margin: 0;
+  padding: 0;
+}
+* {
+
+    font-family: 'Nunito', sans-serif;
     box-sizing: border-box;
 }
 p{
@@ -39,7 +35,13 @@ p{
 h1{
     padding: 50px 0;
 }
-h2{
+#Contenu h1{
+    padding: 150px 0px 30px 0px;
+}
+#Apropos h1{
+    padding: 200px 0px 30px 0px;
+}
+h2 {
     padding: 50px 0 30px 0!important;
 }
 .btn:focus{
@@ -54,6 +56,10 @@ label  {
 }
 body{
     min-height: 100vh;
+}
+div#content{
+    min-height: 70vh;
+    width: 100%;
 }
 .container-fluid{
     padding: 0px;
@@ -77,6 +83,7 @@ body{
     -webkit-background-position: center center;
     -webkit-background-size: cover;
     overflow-x: visible;
+
 }
 .masthead .intro-body{
     display: table-cell;
@@ -91,8 +98,11 @@ body{
     margin-top: 50px;
     margin-bottom:10px;
 }
+.btn-arrow:hover{
+
+}
 .masthead h1{
-  	color:#fff;
+  color:#fff;
 }
 /**************** FIN MASTHEAD ****************/
 
@@ -115,7 +125,9 @@ body{
 #mainNav .navbar-nav .nav-item a, #mainNav .navbar-nav .nav-item .dropdown a{
     transition: color 0.3s ease-in-out, background 0.3s ease-in-out, transform 0.3s ease-in-out;
     color:#fff;
+
 }
+
 #mainNav .navbar-nav .nav-item a:hover, #mainNav .navbar-nav .nav-item .dropdown a:hover{
     outline: none;
     background-color: transparent;   
@@ -135,6 +147,7 @@ body{
     -webkit-box-shadow: 0px 9px 66px -24px rgba(0,0,0,0.94);
     -moz-box-shadow: 0px 9px 66px -24px rgba(0,0,0,0.94);
     box-shadow: 0px 9px 66px -24px rgba(0,0,0,0.94);
+
 }
 #mainNav .container-fluid{
     padding:0;
@@ -178,6 +191,7 @@ nav .dropdown-menu{
 #secondNav .navbar-nav .nav-item a{
     transition: color 0.3s ease-in-out, background 0.3s ease-in-out, transform 0.3s ease-in-out;
     color:#fff;
+
 }
 #secondNav .navbar-nav .nav-item a:hover{
     outline: none;
@@ -194,6 +208,7 @@ nav .dropdown-menu{
     box-shadow: 0px 9px 66px -24px rgba(0,0,0,0.94);
 }
 #secondNav .navbar-shrink{
+
     background: rgb(47,51,56) !important; 
 }
 #secondNav .container-fluid{
@@ -211,7 +226,6 @@ nav .dropdown-menu{
 /**************** FIN SECOND NAV NAVIGATION ****************/
 
 
-
 /**************** MENU SECONDAIRE ****************/
 #menuSecondaire{
     position: fixed;
@@ -224,7 +238,6 @@ nav .dropdown-menu{
     color: #fff;
 }
 /**************** FIN MENU SECONDAIRE ****************/
-
 
 
 /**************** PAGE ACCUEIL ****************/
@@ -250,6 +263,9 @@ nav .dropdown-menu{
 }
 table tr th{
     color: #89dc65;
+}
+table thead p{
+
 }
 table caption{
     caption-side: top;
@@ -488,7 +504,6 @@ h2#exampleModalLabel.modal-title {
 }
 .slick-slide {
     margin: 0px 20px;
-    transition: all ease-in-out .3s;
 }
 .slick-slide img {
     width: 100%;
@@ -496,6 +511,9 @@ h2#exampleModalLabel.modal-title {
 .slick-prev:before,
 .slick-next:before {
     color: black;
+}
+.slick-slide {
+    transition: all ease-in-out .3s;
 }
 .slick-current {
     opacity: 1;
@@ -505,7 +523,6 @@ h2#exampleModalLabel.modal-title {
     margin: 10px;
 }
 /**************** FIN CAROUSEL SLICK ****************/
-
 
 
 /**************** SPAN COULEUR ****************/
@@ -520,9 +537,7 @@ span.rouge{
 }
 /**************** FIN SPAN COULEUR ****************/
 
-
-
-/**************** 404/CRÉDIT ****************/
+/**************** 404 et credit ****************/
 #Contenu_credit{
     overflow-x: hidden;
     background-color: #fff;
@@ -548,14 +563,13 @@ a.lien_accueil:hover{
 .section_logo{
     margin: 100px 0 0 0;
 }
-/**************** FIN 404/CRÉDIT ****************/
-
+/**************** FIN 404 credit ****************/
 
 /*Section pour les effets qui sont seulement activé dans une certaine grandeur*/
 
-
-/**************** Desktop EXTRA-LARGE ****************/
+/*Desktop*/
 @media(min-width:992px){
+
    .nav-link.active{
         outline: none;
         background-color: rgba(255,255,255,0.3);
@@ -563,6 +577,7 @@ a.lien_accueil:hover{
     .nav-link.active:hover{
         color: #fff;
     }
+
     .nav-link{
         display: inline-block;
         text-decoration: none;
@@ -579,16 +594,13 @@ a.lien_accueil:hover{
     .nav-link:hover::after{
         width:100%;
     }
-    .logo_partenaire{
+        .logo_partenaire{
         width: 90px;
         margin: 10px;
     }
 }
-/**************** Fin Desktop EXTRA-LARGE ****************/
 
 
-
-/**************** Desktop LARGE ****************/
 @media(max-width:992px){
     #mainNav .navbar-brand{
         content: url("../img/logo_nav_mdv2.png");
@@ -597,23 +609,19 @@ a.lien_accueil:hover{
     #mainNav{
         background-color: rgb(47,51,56);
     }
-} 
-/**************** Fin Desktop LARGE ****************/
+/******************WTF**********************/
 
 
 
-/**************** Tablette ****************/
+/*Tablette téléphone*/
 @media(max-width:768px){
+/*FORMULAIRE MEMBRE*/
     .form_membre {
         text-align: center;
-        margin: 0 15px 0 15px;
     }
     .form_membre input{
         text-align: center;
-    }
-    .table-responsive-sm{
-        margin: 0 0 80px 0;
-    }
+    } 
     iframe{
         width: 600px;
     }
@@ -628,54 +636,40 @@ a.lien_accueil:hover{
         padding-top: 50px;
     }
     input.form-control.formulaire{
-    	width: 400px;
-    	-moz-border-radius: 25px 25px;
-   		-webkit-border-radius: 25px 25px;
-    	border-radius: 25px 25px;
+    width: 400px;
+    -moz-border-radius: 25px 25px;
+    -webkit-border-radius: 25px 25px;
+    border-radius: 25px 25px;
     }
+/*FIN FORMULAIRE MEMBRE*/
+
+/*ACTIVITÉ*/
     .activite h3{
         text-align: center;
     }
+/*FIN ACTIVITÉ*/    
     iframe{
         width: 360px;
         height: 202.5px;
     }
+
+
     .logo_partenaire{
         width: 90px!important;
     }
+
     .evenement p{
         text-align: center !important;
     }
-    #mainNav{
-        background: transparent;
-    }
-    #menuSecondaire{
-        top: 80px;
-    }  
-    .navbar-brand{
-        display: none;
-    }
-    .navbar-toggler{
-        margin: 15px 0px 15px 85%;
-    }
 }
-/**************** Fin Tablette ****************/
 
 
-
-/**************** TÉLÉPHONE ****************/
+/*TÉLÉPHONE*/
 @media(max-width:576px){
+    /*GLOBAL*/
     #Accueil h1{
         font-size: 1.5em;
         padding: 30px 0 0 0!important;
-    }
-    h1{
-        font-size: 1.5em;
-        padding: 150px 0 0 0!important;
-    }
-    h2{
-         font-size: 1.3em;
-         padding: 0px 0 10px 0;
     }
     h3{
         font-size: 1.2em;
@@ -685,43 +679,147 @@ a.lien_accueil:hover{
         font-size: 0.8em;
         padding: 0 15px 0 15px;
     }
+    /*FIN GLOBAL*/
+
     .activite{
         padding: 20px 0 20px 0;
-        margin: 0 15px 0 15px;
     }
+
     .btn-modal{
         font-size: 1em;
     }
-    .logo_partenaire{
-        width: 70px!important;
-    }
-    .table th{
-        padding: 0!important;
-    }
-    .table td{
-        padding: .50rem;
-    }
-    h2#exampleModalLabel.modal-title {
-        padding: 0!important;
-    }
-    h1.text-drop{
-        padding: 30px 0 0 0!important;
-    }
-	.btn-arrow i{
-        margin-top: 10px;
-    }
-    .section_logo{
-        margin: 20px 0 0 0!important;
-        padding: 10px 0 10px 0;
-    }
-    #menuSecondaire ul{
-        color: black;
-        flex-direction: column;
-    }
-    #menuSecondaire .fleche{
-        display: block
-    }
-    .masthead{
-        padding: 100px 0 0 0;
-    }    
 }    
+
+    /*Tablette téléphone*/
+    @media(max-width:768px){
+        #mainNav{
+            background: transparent;
+        }  
+        .navbar-brand{
+            display: none;
+        }
+        .navbar-toggler{
+            margin: 15px 0px 15px 85%;
+        }
+        /*FORMULAIRE MEMBRE*/
+        .form_membre {
+            text-align: center;
+            margin: 0 15px 0 15px;
+        }
+        .form_membre input{
+            text-align: center;
+        } 
+        iframe{
+            width: 600px;
+        }
+        /*FIN FORMULAIRE MEMBRE*/
+
+        /*ACTIVITÉ*/
+        .activite h3{
+            text-align: center;
+        }
+        /*FIN ACTIVITÉ*/    
+        iframe{
+            width: 360px;
+            height: 202.5px;
+        }
+        .table-responsive-sm{
+            margin: 0 0 80px 0;
+        }
+
+        #menuSecondaire{
+            top: 80px;
+        }
+
+    }
+
+    @media(max-width:576px){
+
+        /*GLOBAL*/
+        h1{
+            font-size: 1.5em;
+            padding: 150px 0 0 0!important;
+        }
+        h2 {
+            font-size: 1.3em;
+            padding: 0px 0 10px 0;
+        }
+        h3{
+            font-size: 1.2em;
+            padding: 0 15px 0 15px;
+        }
+        p{
+            font-size: 0.8em;
+            padding: 0 15px 0 15px;
+        }
+        /*FIN GLOBAL*/
+
+
+        .logo_partenaire{
+            width: 70px!important;
+        }
+
+
+        /*TABLEAU CALENDRIER*/
+        .table th{
+            padding: 0!important;
+        }
+        .table td{
+            padding: .50rem;
+        }
+        /*FIN TABLEAU CALENDRIER*/
+
+        /*MODAL*/
+        h2#exampleModalLabel.modal-title {
+            padding: 0!important;
+        }
+        /*FIN MODAL*/
+
+        /*HEADER*/
+        h1.text-drop{
+            padding: 30px 0 0 0!important;
+        }
+        .btn-arrow i{
+            margin-top: 10px;
+        }
+
+        .masthead{
+            padding: 100px 0 0 0;
+        }
+        /*FIN HEADER*/
+
+        /*PAGE ACTIVITE*/
+        .activite{
+            padding: 20px 0 20px 0;
+            margin: 0 15px 0 15px;
+        }
+        /*FIN PAGE ACTIVITE*/
+
+        /*CAROUSEL PARTENAIRE*/
+
+
+        /*FIN CAROUSEL PARTENAIRE*/
+
+        input.form-control.formulaire{
+            width: 300px;
+            -moz-border-radius: 25px 25px;
+            -webkit-border-radius: 25px 25px;
+            border-radius: 25px 25px;
+        }
+
+        .section_logo{
+            margin: 20px 0 0 0!important;
+            padding: 10px 0 10px 0;
+        }
+
+        #menuSecondaire ul{
+            color: black;
+            flex-direction: column;
+        }
+        #menuSecondaire .fleche{
+            display: block
+        }
+
+}  
+
+
