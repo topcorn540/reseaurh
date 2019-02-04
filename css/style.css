@@ -7,6 +7,9 @@ html, body {
     margin: 0;
     padding: 0;
 }
+body{
+    min-height: 100vh;
+}
 #Contenu{
     overflow-x: hidden;
     background-color: #fff;
@@ -51,9 +54,6 @@ a:focus, input:focus, button:focus{
 }
 label  {
     font-size: 1.2em;
-}
-body{
-    min-height: 100vh;
 }
 .container-fluid{
     padding: 0px;
@@ -139,10 +139,8 @@ body{
 #mainNav .container-fluid{
     padding:0;
 }
-#mainNav img{
-    width:60%;
-}
 #mainNav .navbar-brand img{
+    width:60%;
     padding:0;
 }
 #mainNav .navbar-brand{
@@ -193,16 +191,14 @@ nav .dropdown-menu{
     -moz-box-shadow: 0px 9px 66px -24px rgba(0,0,0,0.94);
     box-shadow: 0px 9px 66px -24px rgba(0,0,0,0.94);
 }
+#secondNav img{
+    width:150px;
+    padding:0;
+}
 #secondNav .navbar-shrink{
     background: rgb(47,51,56) !important; 
 }
 #secondNav .container-fluid{
-    padding:0;
-}
-#secondNav img{
-    width:150px;
-}
-#secondNav .navbar-brand img{
     padding:0;
 }
 #secondNav .navbar-brand{
@@ -231,17 +227,10 @@ nav .dropdown-menu{
 #Accueil h1{
     padding: 70px 0 50px 0;
 }
-#Accueil .evenement{
-    width: 500px;
-    height: 300px;
-}
-#Accueil .calendrier{
-    background-color: rgb(47,51,56);
-}
 .ligne-verticale hr{
     border:none;
     border-left:1px solid #89dc65;
-    height:500px;
+    height:450px;
     width:1px;
     margin: 30px 0 80px 0;     
 }
@@ -490,9 +479,6 @@ h2#exampleModalLabel.modal-title {
     margin: 0px 20px;
     transition: all ease-in-out .3s;
 }
-.slick-slide img {
-    width: 100%;
-}
 .slick-prev:before,
 .slick-next:before {
     color: black;
@@ -535,7 +521,8 @@ span.rouge{
 }
 .p_erreur{
     text-align: center;
-    padding: 30px 0 0 0;    
+    padding: 30px 0 0 0;
+    margin: 0 10px 0 10px;    
 }
 a.lien_accueil{
     color: #89dc65;
@@ -556,6 +543,7 @@ a.lien_accueil:hover{
 
 /**************** Desktop EXTRA-LARGE ****************/
 @media(min-width:992px){
+    /*Main-navigation*/
    .nav-link.active{
         outline: none;
         background-color: rgba(255,255,255,0.3);
@@ -579,10 +567,15 @@ a.lien_accueil:hover{
     .nav-link:hover::after{
         width:100%;
     }
+    /*Fin Main-navigation*/
+
+
+    /*LOGO partenaire slider footer*/
     .logo_partenaire{
         width: 90px;
         margin: 10px;
     }
+    /*Fin LOGO partenaire slider footer*/
 }
 /**************** Fin Desktop EXTRA-LARGE ****************/
 
@@ -604,48 +597,46 @@ a.lien_accueil:hover{
 
 /**************** Tablette ****************/
 @media(max-width:768px){
+    /*Formulaire*/
     .form_membre {
         text-align: center;
-        margin: 0 15px 0 15px;
+        margin: 0 25px 0 25px!important;
     }
     .form_membre input{
         text-align: center;
+    }   
+    input.form-control.formulaire{
+        width: 400px;
+        -moz-border-radius: 25px 25px;
+        -webkit-border-radius: 25px 25px;
+        border-radius: 25px 25px;
     }
-    .table-responsive-sm{
-        margin: 0 0 80px 0;
-    }
-    iframe{
-        width: 600px;
-    }
+    /*Fin Formulaire*/
+
+
+    /*Video Slider*/ 
     .iframe-lg, .slider_video{
         display: none !important;
     }
     .iframe-md{
         display: block !important;
         margin:25px auto 25px auto;
-    }
-    #Accueil h1{
-        padding-top: 50px;
-    }
-    input.form-control.formulaire{
-    	width: 400px;
-    	-moz-border-radius: 25px 25px;
-   		-webkit-border-radius: 25px 25px;
-    	border-radius: 25px 25px;
-    }
-    .activite h3{
-        text-align: center;
-    }
+    }    
     iframe{
         width: 360px;
         height: 202.5px;
+    }    
+    /*Fin video slider*/
+
+
+    /*Calendrier*/
+    .table-responsive-sm{
+        margin: 0 0 80px 0;
     }
-    .logo_partenaire{
-        width: 90px!important;
-    }
-    .evenement p{
-        text-align: center !important;
-    }
+    /*Fin Calendrier*/
+
+
+    /*Navigation*/
     #mainNav{
         background: transparent;
     }
@@ -658,6 +649,27 @@ a.lien_accueil:hover{
     .navbar-toggler{
         margin: 15px 0px 15px 85%;
     }
+    /*Fin navigation*/
+   
+
+   /*TEXT*/
+    #Accueil h1{
+        padding-top: 50px;
+    }   
+    .activite h3{
+        text-align: center;
+    }
+    .evenement p{
+        text-align: center !important;
+    }
+    /*Fin TEXT*/
+
+ 
+    /*LOGO partenaire slider footer*/
+    .logo_partenaire{
+        width: 90px!important;
+    }
+    /*Fin LOGO partenaire slider footer*/
 }
 /**************** Fin Tablette ****************/
 
@@ -665,6 +677,7 @@ a.lien_accueil:hover{
 
 /**************** TÉLÉPHONE ****************/
 @media(max-width:576px){
+    /*TEXT*/
     #Accueil h1{
         font-size: 1.5em;
         padding: 30px 0 0 0!important;
@@ -685,34 +698,58 @@ a.lien_accueil:hover{
         font-size: 0.8em;
         padding: 0 15px 0 15px;
     }
-    .activite{
-        padding: 20px 0 20px 0;
-        margin: 0 15px 0 15px;
-    }
-    .btn-modal{
-        font-size: 1em;
-    }
-    .logo_partenaire{
-        width: 70px!important;
-    }
-    .table th{
-        padding: 0!important;
-    }
-    .table td{
-        padding: .50rem;
-    }
     h2#exampleModalLabel.modal-title {
         padding: 0!important;
     }
     h1.text-drop{
         padding: 30px 0 0 0!important;
     }
+    /*Fin TEXT*/
+
+
+    /*Page activite*/
+    .activite{
+        padding: 20px 0 20px 0;
+        margin: 0 15px 0 15px;
+    }
+    /*Fin Page activite*/
+
+
+    /*Modal*/
+    .btn-modal{
+        font-size: 1em;
+    }
+    /*Fin Modal*/
+
+
+    /*LOGO partenaire slider footer*/
+    .logo_partenaire{
+        width: 70px!important;
+    }
+    /*Fin LOGO partenaire slider footer*/
+
+
+    /*Calendrier*/
+    .table th{
+        padding: 0!important;
+    }
+    .table td{
+        padding: .50rem;
+    }
+    /*Fin Calendrier*/
+
+
+    /*Section logo Page CREDIT*/
+    .section_logo{
+        margin: 20px 0 30px 0!important;
+        padding: 10px 0 10px 0;
+    }
+    /*Fin Section logo Page CREDIT*/
+
+
+    /*Header et navigation*/
 	.btn-arrow i{
         margin-top: 10px;
-    }
-    .section_logo{
-        margin: 20px 0 0 0!important;
-        padding: 10px 0 10px 0;
     }
     #menuSecondaire ul{
         color: black;
@@ -723,5 +760,16 @@ a.lien_accueil:hover{
     }
     .masthead{
         padding: 100px 0 0 0;
-    }    
+    }
+    /*Fin header et navigation*/
+
+
+    /*Formulaire*/
+    input.form-control.formulaire{
+        width: 300px;
+        -moz-border-radius: 25px 25px;
+        -webkit-border-radius: 25px 25px;
+        border-radius: 25px 25px;
+    }
+    /*Fin Formulaire*/    
 }    
