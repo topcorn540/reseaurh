@@ -374,56 +374,6 @@ footer h3{
 
 
 
-/**************** FOOTER RESPONSIVE ****************/
-.logo_rh_blanc_responsive{
-    width: 130px;
-    height: auto;
-    padding: 0 0 30px 0;
-}
-.img_link_responsive{
-    width: 70px;
-    padding: 0 11px 0 11px;
-}
-.second_nav_responsive .nav-link{
-    font-size: 14px;
-    font-family: 'Nunito', sans-serif;
-    padding:5px;
-    color: #89dc65;
-}
-.nav_footer_responsive{
-    padding: 30px 0 30px 0;
-}
-#btn_infolettre_responsive{
-    margin: 20px 11px 30px 11px;
-    -moz-border-radius: 25px 25px;
-    -webkit-border-radius: 25px 25px;
-    border-radius: 25px 25px;
-    background-color: #89dc65;
-    color: #fff;
-}
-.form-control{
-    margin: 20px 0 0 0 !important;
-}
-h3.h3_infolettre_responsive{
-    font-size: 1.2em; 
-    padding: 30px 0 0 0;
-}
-.footer_section_responsive{
-    text-align: center;
-    border-bottom: 1px solid #bbc6c3;
-}
-.footer_section_responsive_reseau_sociaux{
-    text-align: center;
-    border: none;
-}
-h3.media_sociaux {
-    padding: 30px 0 0 0;
-    font-size: 1.2em;
-}
-/**************** FIN FOOTER RESPONSIVE ****************/
-
-
-
 /**************** MODAL ****************/
 input.form-control{
     -moz-border-radius: 25px 25px;
@@ -670,6 +620,42 @@ a.lien_accueil:hover{
         width: 90px!important;
     }
     /*Fin LOGO partenaire slider footer*/
+
+
+    /*Footer*/
+    .logo_rh_blanc{
+        width: 130px;
+        height: auto;
+        padding: 0 0 30px 0!important;
+    }
+    .img_link{
+        width: 70px;
+        padding: 0 11px 0 11px;
+    }
+    .second_nav .nav-link{
+        font-size: 14px;
+        font-family: 'Nunito', sans-serif;
+        padding:5px;
+    }
+    .nav_footer{
+        padding: 30px 0 30px 0!important;
+    }
+    #btn_infolettre{
+        margin: 10px 0px 30px 0px;
+        -moz-border-radius: 25px 25px;
+        -webkit-border-radius: 25px 25px;
+        border-radius: 25px 25px;
+        background-color: #89dc65;
+        color: #fff;
+    }
+    #infolettre{
+        margin: 0px!important;
+        -moz-border-radius: 25px 25px;
+        -webkit-border-radius: 25px 25px;
+        border-radius: 25px 25px;
+    }
+
+    /*Fin Footer*/
 }
 /**************** Fin Tablette ****************/
 
@@ -771,5 +757,44 @@ a.lien_accueil:hover{
         -webkit-border-radius: 25px 25px;
         border-radius: 25px 25px;
     }
-    /*Fin Formulaire*/    
+    /*Fin Formulaire*/
+
+
+    /*Footer*/
+    .logo_rh_blanc{
+        width: 130px;
+        height: auto;
+        padding: 0 0 30px 0!important;
+    }
+    .img_link{
+        width: 70px;
+        padding: 0 11px 0 11px;
+    }
+    .second_nav .nav-link{
+        font-size: 14px;
+        font-family: 'Nunito', sans-serif;
+        padding:5px;
+    }
+    .nav_footer{
+        padding: 30px 0 30px 0!important;
+    }
+    #btn_infolettre{
+        margin: 20px 11px 30px 11px;
+        -moz-border-radius: 25px 25px;
+        -webkit-border-radius: 25px 25px;
+        border-radius: 25px 25px;
+        background-color: #89dc65;
+        color: #fff;
+    }
+    #infolettre{
+        margin: 0px!important;
+        -moz-border-radius: 25px 25px;
+        -webkit-border-radius: 25px 25px;
+        border-radius: 25px 25px;
+    }
+    footer h3{
+        font-size: 1.2em!important; 
+        padding: 30px 0 0 0;
+    }    
+    /*Fin footer*/
 }    
