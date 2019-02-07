@@ -121,7 +121,7 @@ label  {
     background-color: transparent;   
 }
 #mainNav{
-    padding:0px 15px 0px 0px;
+    /*padding:0px 15px 0px 0px;*/
     transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
     letter-spacing: 1px;
     border-bottom: none;
@@ -571,6 +571,7 @@ a.lien_accueil:hover{
     .iframe-md{
         display: block !important;
         margin:25px auto 25px auto;
+        padding: 0 25px 0 25px;
     }    
     iframe{
         width: 360px;
@@ -666,8 +667,14 @@ a.lien_accueil:hover{
     /*TEXT*/
     #Accueil h1{
         font-size: 1.5em;
-        padding: 30px 0 0 0!important;
+        padding: 50px 0 0 0!important;
     }
+    .evenement h2{
+        padding: 15px 0 0 0!important;
+    }
+    .calendrier h2{
+        padding: 15px 0 0 0!important;
+    }    
     h1{
         font-size: 1.5em;
         padding: 150px 0 0 0!important;
@@ -692,6 +699,12 @@ a.lien_accueil:hover{
     }
     /*Fin TEXT*/
 
+
+    /*Accueil section evenement*/
+    .evenement{
+        padding: 0 0 15px 0;
+    }
+    /*Fin Accueil section evenement*/
 
     /*Page activite*/
     .activite{
@@ -722,7 +735,26 @@ a.lien_accueil:hover{
     .table td{
         padding: .50rem;
     }
+    .table-responsive-sm{
+        margin: 0 0 50px 0;
+    }
     /*Fin Calendrier*/
+
+
+    /*Videos*/
+    .iframe-md{
+        display: block !important;
+        margin:25px auto 25px auto;
+        padding: 0 25px 0 25px;
+    }
+    iframe{
+        width: 340px;
+        height: auto;
+    }
+    .video{
+        padding: 0 0 15px 0;
+    }        
+    /*Fin Videos*/
 
 
     /*Section logo Page CREDIT*/
