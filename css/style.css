@@ -121,7 +121,7 @@ label  {
     background-color: transparent;   
 }
 #mainNav{
-    /*padding:0px 15px 0px 0px;*/
+    padding:0px 15px 0px 0px;
     transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
     letter-spacing: 1px;
     border-bottom: none;
@@ -364,6 +364,10 @@ footer h3{
 }
 .footer_section{
     border-left: 1px solid #89dc65;
+}
+.footer_section_responsive{
+    border-bottom: 1px solid #bbc6c3;
+    padding: 0 50px 0 50px;
 }
 .copyright{
     font-family: 'Nanum Gothic', sans-serif;
@@ -766,6 +770,9 @@ a.lien_accueil:hover{
 
 
     /*Header et navigation*/
+    #mainNav{
+        padding: 0px!important;
+    }  
 	.btn-arrow i{
         margin-top: 10px;
     }

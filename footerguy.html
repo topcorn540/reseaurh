@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+	<title>Réseau RH Plus ++--</title>
+</head>
+<body>
+
+
+<!-- FOOTER -->
+
+<footer class="container-fluid ">
+	<div class="row_footer row">
+		<div class="barregrise col-sm-12 text-center col-md-4 text-md-left">
+			<img src="img/logoFINAL_RH+_BetN.png" class="logo_rh_blanc img-fluid" alt="Logo réseau rh plus blanc">
+		</div>
+		<div class="barreverte barregrise  col-sm-12 text-center col-md-4 text-md-left">
+			<ul class="second_nav nav flex-column">
+			  <li class="nav-item">
+			    <a class="nav-link" href="index.html">accueil</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" href="#">à propos</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" href="#">activités</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" href="#">devenir membres</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" href="#">connexion</a>
+			  </li>
+			</ul>
+		</div>
+		<div class="barreverte col-sm-12 text-center  col-md-4 text-md-left">
+			<div class="row">
+				<div class="col-sm-12 order-sm-2 order-md-1">				
+					<h3>Média sociaux</h3>
+					<img src="img/link_facebook.png" class="img_link img-fluid" alt="lien facebook">
+					<img src="img/link_linkedin.png" class="img_link img-fluid" alt="lien linkedin">
+				</div>
+				<div class="barregrise col-sm-12 order-sm-1 order-md-2">
+					<h3>Abonnez-vous à notre <span class="vert">infolettre</span></h3>  
+					<input type="text"class="form-control" id="infolettre" placeholder="Votre adresse courriel ..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+		 			<button class="btn btn-outline-secondary" id="btn_infolettre" type="button">Envoyer</button>
+		 		</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+			<div class="col-12">
+				<p class="copyright"><span class="vert">Tous droits réservés</span><span class="blanc"> © AbrakadaWeb </span><span class="vert">2019</span></p>
+			</div>
+		<!-- FIN FOOTER MD à SM -->
+	</div>
+</footer>
+<script src="jquery/jquery-3.3.1.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="dist/js/bootstrap.min.js"></script>
+<script src="js/myjs.js"></script>
+<script>
+$(document).ready(function(){
+/* Barres séparatrices des sections */   
+    if ($(window).width() < 768) {
+        $('.barreverte').removeClass('footer_section');
+        $('.barregrise').addClass('footer_section_responsive');
+    }
+    else {
+        $('.barreverte').addClass('footer_section');
+        $('.barregrise').removeClass('footer_section_responsive');
+    }
+        
+    $(window).resize(function(){
+       	if ($(window).width() < 768) {
+           $('.barreverte').removeClass('footer_section');
+           $('.barregrise').addClass('footer_section_responsive');
+        }
+        else {
+        	$('.barreverte').addClass('footer_section');
+         	$('.barregrise').removeClass('footer_section_responsive');
+        }
+    });
+});
+</script>	
+</body>
+</html>
